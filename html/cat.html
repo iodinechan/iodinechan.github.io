@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About My Cat</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/gallery.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<!-- The menu sidebar -->
+	<div class="sidebar">
+	  <a href="html.html">HTML Cheat Sheet</a>
+	  <a href="css.html">CSS Cheat Sheet</a>
+	  <a href="cat.html" class="active">About My Cat</a>
+	</div>
+	<!-- The main content -->
+	<div class="main">
+		<h1>About My Cat</h1>
+		<nav>
+			<!-- The top navigation bar -->
+			<ul class="topnav">
+				<li><a href="#profile">Profile</a></li>
+				<li><a href="#story">Story</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+			</ul>
+		</nav>
+        <!-- The Profile section -->
+        <div id="profile">
+			<h2>Bubu's Profile</h2>
+			<div>
+				<img id="profilePic" src="../img/bub_profile.jpeg" alt="Bubu Profile Picture">
+				<table id="profileTable">
+					<tr>
+						<td>Name</td>
+						<td>:</td>
+						<td>Bubu</td>
+					</tr>
+					<tr>
+						<td>Gender</td>
+						<td>:</td>
+						<td>Female</td>
+					</tr>
+					<tr>
+						<td>Date of Birth</td>
+						<td>:</td>
+						<td>31<sup>st</sup> October, 2015</td>
+					</tr>
+					<tr>
+						<td>Place of Birth</td>
+						<td>:</td>
+						<td>Hong Kong</td>
+					</tr>
+					<tr>
+						<td>Weight</td>
+						<td>:</td>
+						<td>3.8kg</td>
+					</tr>
+					<tr>
+						<td>Favourite</td>
+						<td>:</td>
+						<td>Canned Food</td>
+					</tr>
+				</table>
+			</div>
+        </div>
+        <!-- The Story section -->
+        <div id="story">
+			<h2>Bubu's Story</h2>
+			<p>
+				Bubu was a little brown tabby cat with striking black stripes that ran down her back. She was born in October of 2015 as a stray, spending her early months wandering the streets in search of food and shelter. But Bubu's luck changed one day when she met a young couple who were out for a walk.
+			</p>
+			<p>
+				The couple noticed Bubu right away, her big green eyes and playful demeanor capturing their hearts. They approached her slowly, offering some food and water, and before they knew it, Bubu had curled up in their laps for a nap.
+			</p>
+			<p>
+				From that day on, the couple couldn't resist Bubu's charm, and they decided to adopt her as their own. Bubu quickly adapted to her new home, playing with toys, snuggling up on the couch, and exploring every nook and cranny of her new surroundings. With her new family, Bubu finally had the love and care she deserved.
+			</p>
+        </div>
+        <!-- The Gallery section -->
+        <div id="gallery">
+			<h2>Gallery</h2>
+			<div class="gallery">
+				<ul>
+					<li><img src="../img/bubu_1.jpg" onclick="openModal();currentSlide(1)" class="cursor"></li>
+					<li><img src="../img/bubu_2.jpg" onclick="openModal();currentSlide(2)" class="cursor"></li>
+					<li><img src="../img/bubu_3.jpg" onclick="openModal();currentSlide(3)" class="cursor"></li>
+					<li><img src="../img/bubu_4.jpeg" onclick="openModal();currentSlide(4)" class="cursor"></li>
+					<li><img src="../img/bubu_5.jpg" onclick="openModal();currentSlide(5)" class="cursor"></li>
+					<li><img src="../img/bubu_6.jpg" onclick="openModal();currentSlide(6)" class="cursor"></li>
+					<li><img src="../img/bubu_7.jpg" onclick="openModal();currentSlide(7)" class="cursor"></li>
+					<li><img src="../img/bubu_8.jpeg" onclick="openModal();currentSlide(8)" class="cursor"></li>
+					<li><img src="../img/bubu_9.jpeg" onclick="openModal();currentSlide(9)" class="cursor"></li>
+					<li><img src="../img/bubu_10.jpg" onclick="openModal();currentSlide(10)" class="cursor"></li>
+					<li><img src="../img/bubu_11.jpeg" onclick="openModal();currentSlide(11)" class="cursor"></li>
+					<li><img src="../img/bubu_12.jpeg" onclick="openModal();currentSlide(12)" class="cursor"></li>
+				</ul>
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+						<div class="mySlides"><img src="../img/bubu_1.jpg"></div>
+						<div class="mySlides"><img src="../img/bubu_2.jpg"></div>
+						<div class="mySlides"><img src="../img/bubu_3.jpg"></div>
+						<div class="mySlides"><img src="../img/bubu_4.jpeg"></div>
+						<div class="mySlides"><img src="../img/bubu_5.jpg"></div>
+						<div class="mySlides"><img src="../img/bubu_6.jpg"></div>
+						<div class="mySlides"><img src="../img/bubu_7.jpg"></div>
+						<div class="mySlides"><img src="../img/bubu_8.jpeg"></div>
+						<div class="mySlides"><img src="../img/bubu_9.jpeg"></div>
+						<div class="mySlides"><img src="../img/bubu_10.jpg"></div>
+						<div class="mySlides"><img src="../img/bubu_11.jpeg"></div>
+						<div class="mySlides"><img src="../img/bubu_12.jpeg"></div>
+						<a class="prev" id="prev">&#10094;</a>
+						<a class="next" id="next">&#10095;</a>
+					</div>
+				</div>
+			</div>
+        </div>
+	</div>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>

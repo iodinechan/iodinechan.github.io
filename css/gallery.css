@@ -1,0 +1,139 @@
+#gallery div {
+	padding: 0;
+	border: none;
+}
+
+/* Use CSS flex box to display the photos */
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+	padding: 10px;
+}
+
+.gallery ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+  
+.gallery li {
+	height: 40vh;
+	flex-grow: 1;
+}
+  
+.gallery li img {
+	max-height: 100%;
+	min-width: 100%;
+	object-fit: cover;
+	vertical-align: bottom;
+    border-radius: 30px;
+    border: 1px solid PowderBlue;
+    padding: 10px;
+}
+
+/* The modal div to display the selected photo */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.9);
+	margin: 0;
+	padding: 0;
+	align-items: center;
+}
+
+.modal-content {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* The close "button" for the modal div */
+.close {
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+	color: #f1f1f1;
+	cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.mySlides {
+	display: none;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+/* The previous and next "button" for the modal div */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0;
+}
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(0,0,0,0.7);
+}
+
+.next {
+	right: 20px;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev {
+	left: 20px;
+	border-radius: 0 3px 3px 0;
+}
+
+.mySlides img {
+	margin: auto;
+	display: block;
+	width: 100%;
+	max-width: 100vw;
+	height: auto;
+	max-height: 100vh;
+}
+
+.modal-content,
+.mySlides,
+.prev,
+.next {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+	from {transform: scale(0)}
+	to {transform: scale(1)}
+}
