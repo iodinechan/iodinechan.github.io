@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<!-- The menu sidebar -->
+	<div class="sidebar">
+	  <a href="index.html">HTML Cheat Sheet</a>
+	  <a href="css.html" class="active">CSS Cheat Sheet</a>
+	  <a href="cat.html">About My Cat</a>
+	</div>
+	<!-- The main content -->
+	<div class="main">
+		<h1>CSS Cheat Sheet</h1>
+		<nav>
+			<!-- The top navigation bar -->
+			<ul class="topnav">
+				<li><a href="#cssSyntax">Syntax</a></li>
+				<li><a href="#applyCss">Apply CSS</a></li>
+				<li><a href="#clearFix">Clearfix</a></li>
+				<li><a href="#boxModel">Box Model</a></li>
+				<li><a href="#selector">Selector</a></li>
+				<li><a href="#property">Property</a></li>
+				<li><a href="#mediaQuery">Media Query</a></li>
+			</ul>
+		</nav>
+		<!-- The CSS Syntax section -->
+		<div id="cssSyntax">
+			<h2>Basic CSS Syntax</h2>
+			<p>Here are some examples of basic CSS syntax:</p>
+			<ul>
+				<li><code class="codeStyle">Selector { Property: Value; }</code></li>
+				<li><code class="codeStyle">p { color: red; }</code></li>
+				<li><code class="codeStyle">#id { font-size: 24px; }</code></li>
+				<li><code class="codeStyle">.class { background-color: yellow; }</code></li>
+			</ul>
+		</div>
+		<!-- The Apply CSS section -->
+		<div id="applyCss">
+			<h2>Apply CSS</h2>
+			<p>There are three ways to apply CSS styles:</p>
+			<ul>
+				<li>External CSS file <code class="codeStyle">&lt;link rel="stylesheet" href="style.css"&gt;</code></li>
+				<li>Internal styles <code class="codeStyle">&lt;style&gt; /* CSS code here */ &lt;/style&gt;</code></li>
+				<li>Inline styles <code class="codeStyle">&lt;p style="color: blue;"&gt;This text is blue.&lt;/p&gt;</code></li>
+			</ul>
+		</div>
+		<!-- The Clearfix section -->
+		<div id="clearFix">
+			<h2>Clearfix</h2>
+			<p>To clear floats, use the clearfix class:</p>
+			<pre><code class="codeStyle">.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}</code></pre>
+		</div>
+		<!-- The Box Model section -->
+		<div id="boxModel">
+			<h2>Box Model</h2>
+			<p>The box model consists of margin, border, padding, and content:</p>
+			<pre><code class="codeStyle">/* Example box model */
+div {
+	margin: 10px;
+	border: 1px solid white;
+	padding: 10px;
+}</code></pre>
+		<div style="margin: 10px; border: 1px solid white;	padding: 10px;">This is an example.</div>
+		</div>
+		<!-- The CSS Selectors section -->
+		<div id="selector">
+			<h2>Selector</h2>
+			<p>Selectors allow you to target specific HTML elements:</p>
+			<ul>
+				<li>Element selector: <code class="codeStyle">p { color: green; }</code></li>
+				<li>ID selector: <code class="codeStyle">#my-id { font-size: 20px; }</code></li>
+				<li>Class selector: <code class="codeStyle">.my-class { background-color: pink; }</code></li>
+			</ul>
+		</div>
+		<!-- The CSS Properties section -->
+		<div id="property">
+			<h2>Property</h2>
+			<p>Some common CSS properties include:</p>
+			<ul>
+				<li><span style="background-color: yellow;">Background: </span><code class="codeStyle">background-color: yellow;</code></li>
+				<li><span style="box-shadow: 5px 5px 5px #333;">Box shadow: </span><code class="codeStyle">box-shadow: 5px 5px 5px #333;</code></li>
+				<li><span style="text-shadow: 3px 3px 3px #ccc;">Text shadow: </span><code class="codeStyle">text-shadow: 3px 3px 3px #ccc;</code></li>
+				<li><span style="font-family: Arial, sans-serif;">Font: </span><code class="codeStyle">font-family: Arial, sans-serif;</code></li>
+				<li><span style="border: 1px solid white; outline: none;">Border/outline: </span><code class="codeStyle">border: 1px solid white; outline: none;</code></li>
+				<li><span style="border: 1px solid white; border-radius: 10px;">Border radius: </span><code class="codeStyle">border-radius: 10px;</code></li>
+			</ul>
+		</div>
+		<!-- The Media Query Section -->
+		<div id="mediaQuery">
+			<h2>Media Query</h2>
+			<p>Media queries allow you to apply styles based on screen size:</p>
+			<pre><code class="codeStyle">@media screen and (max-width: 600px) {
+	body {
+		background-color: pink;
+	}
+}</code></pre>
+		</div>
+	</div>
+</body>
+</html>

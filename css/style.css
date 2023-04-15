@@ -23,7 +23,7 @@ body {
     overflow: auto;
     font-size: large;
     opacity: 0.9;
-    background: PowderBlue url(../img/bg_2.jpeg) no-repeat fixed bottom left;
+    background: PowderBlue url(/img/bg_2.jpeg) no-repeat fixed bottom left;
     background-size: 260px auto;
     border: 1px solid PowderBlue;
 }
@@ -58,7 +58,7 @@ body {
 
 .main {
     opacity: 0.9;
-    background: black url(../img/bg_1.png) no-repeat fixed bottom left;
+    background: black url(/img/bg_1.png) no-repeat fixed bottom left;
     background-size: contain;
     margin-left: 260px;
     padding: 20px;
